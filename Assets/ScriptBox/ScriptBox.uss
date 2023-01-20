@@ -1,0 +1,49 @@
+Label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+
+.sidebar-button {
+    font-size: 14px;
+    transition-duration: 0.17s;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    background-color: var(--unity-colors-button-background);
+    -unity-text-align: upper-left;
+    display: flex;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    -unity-slice-left: 0;
+    -unity-slice-top: 0;
+    -unity-slice-right: 0;
+    -unity-slice-bottom: 0;
+    color: rgba(171, 171, 171, 255);
+    -unity-font-style: normal;
+    visibility: visible;
+    letter-spacing: -2px;
+    word-spacing: 0;
+}
+
+.unity-label {
+    -unity-text-align: upper-left;
+}
+
+.unity-text-element {
+    color: rgb(231, 231, 231);
+    -unity-text-align: upper-left;
+}
+
+.sidebar-button:hover {
+    background-color: rgba(117, 123, 128, 255);
+}
+
+.sidebar-button:active {
+    background-color: rgba(164, 172, 178, 255);
+}

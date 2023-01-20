@@ -1,6 +1,7 @@
-# Ignore everything
-*
-
-# But not these files...
-!.gitignore
-!/Assets/*
+/*
+!/*/*
+!/Assets/
+!/Assets/ScriptBox/
+/Assets/*
+!/Assets/ScriptBox/
+*.meta

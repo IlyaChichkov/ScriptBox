@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="Template_Overview_Page" src="project://database/Assets/ScriptBox/Template_Overview_Page.uxml?fileID=9197481963319205126&amp;guid=d1d4768d8761f1b43919034412528df1&amp;type=3#Template_Overview_Page" />
+    <Style src="project://database/Assets/ScriptBox/ScriptBox.uss?fileID=7433441132597879392&amp;guid=ae32ecb9444496b44927e85510b522e8&amp;type=3#ScriptBox" />
+    <ui:VisualElement name="body" style="flex-direction: row; margin-bottom: 0; max-height: none; flex-grow: 1; flex-shrink: 1;">
+        <ui:VisualElement name="sidebar" style="min-width: 186px; flex-grow: 0; flex-shrink: 1; font-size: 16px; border-left-width: 0; border-right-width: 1px; border-top-width: 0; border-bottom-width: 0; border-right-color: rgb(84, 84, 84); padding-left: 10px; padding-right: 10px; padding-top: 4px; justify-content: space-between;">
+            <ui:VisualElement>
+                <ui:Label text="Script Box" style="padding-top: 6px; padding-bottom: 6px; padding-left: 6px;" />
+                <ui:Button text="Pattern scripts " display-tooltip-when-elided="true" name="pattern-scripts" class="sidebar-button" />
+                <ui:Button text="Community scripts" display-tooltip-when-elided="true" name="community-scripts" class="sidebar-button" />
+                <ui:Button text="Your templates" display-tooltip-when-elided="true" name="user-scripts" class="sidebar-button" />
+                <ui:Button text="Update" display-tooltip-when-elided="true" name="update-from-remoute" style="margin-top: 10px; padding-top: 3px; padding-bottom: 3px;" />
+                <ui:Button text="Hard Update" display-tooltip-when-elided="true" name="hard-update-from-remoute" style="margin-top: 10px; padding-top: 3px; padding-bottom: 3px;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="align-items: flex-start; margin-bottom: 12px;">
+                <ui:Button display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/Settings.png?fileID=2800000&amp;guid=4bb6ea228db09c443ae3d007b29c4b19&amp;type=3#Settings&apos;); width: 24px; height: 24px; background-color: rgba(88, 88, 88, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="content-body" style="flex-grow: 1; flex-shrink: 1;">
+            <ui:Instance template="Template_Overview_Page" name="template-overview" style="display: none; flex-grow: 1; visibility: visible;" />
+            <ui:VisualElement name="templates-view" style="flex-grow: 1; display: flex;">
+                <ui:VisualElement style="margin-top: 16px; flex-shrink: 0; flex-grow: 0;">
+                    <ui:Label text="Templates" style="font-size: 18px; -unity-text-align: upper-center; color: rgb(231, 231, 231);" />
+                </ui:VisualElement>
+                <ui:GroupBox style="flex-direction: row; flex-grow: 1; margin-top: 6px;">
+                    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" vertical-scroller-visibility="AlwaysVisible" vertical-page-size="-1" horizontal-scroller-visibility="Hidden" focusable="false" style="flex-grow: 1; flex-shrink: 0; flex-direction: column; flex-wrap: wrap;">
+                        <ui:VisualElement name="script-slots-grid" style="flex-wrap: wrap; flex-direction: row; flex-grow: 1; justify-content: flex-start;" />
+                    </ui:ScrollView>
+                </ui:GroupBox>
+            </ui:VisualElement>
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="current-path" style="font-size: 14px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
